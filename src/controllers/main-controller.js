@@ -20,4 +20,8 @@ module.exports = {
         res.render("productDetail")
     },
 
+    productAdd: (req, res) =>{
+        res.render("productAdd")
+    },
+
 }
