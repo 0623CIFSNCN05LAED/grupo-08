@@ -10,7 +10,7 @@ const mainRouter = require("./routes/main-router");
 app.use(mainRouter);
 
 app.set("view engine", "ejs");
-app.set("views", "./src/views") // Set carpeta views que utiliza ejs
+app.set("views", "./src/views") // Set carpeta views ejs
 
 const PORT = 3008;
 app.listen(PORT, () => {
