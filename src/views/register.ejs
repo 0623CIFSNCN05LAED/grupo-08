@@ -8,52 +8,43 @@
     <title>Kairos Register</title>
 </head>
 
-<body class="ta-center formato-total">
-    <header class="mg-top-30">
-        <img class="w-200px mb-5" src="/images/kairos-logo-un-color-azul.png" >
-    </header>
-    <main class="w-100 ta-center">
-        <h1 class="ta-center color-azul fz-20">Registro</h1>
+<body>
 
-        <form class="ta-center mg-top-50  "action="/login">
-            <div class="mg-b border-rad-5 formato-form ">
-                <input  type="text" name="nombre" id="nombre" placeholder="Nombre">
+        <form action="" method="post">
+            <div class="form-body">
+                <img src="/images/kairos-logo-un-color-azul.png" alt="kairos-logo-un-color-azul">
+                <p class="text">Registro</p>
+            
+            <div class="form-register">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
             </div>
-            <div class="mg-b border-rad-5 formato-form">
+            <div class="form-register">
                 <input type="text" name="apellido" id="apellido" placeholder="Apellido">
             </div>
-            <div class="mg-b border-rad-5 formato-form">
+            <div class="form-register">
                 <input type="email" name="email" id="email" placeholder="Email">
             </div>
-            <div class="mg-b border-rad-5 formato-form">
+            <div class="form-register">
                 <label for="genero">Género</label>
                 <select name="genero" id="genero">
-                    <option name= "genero" value="masc" id="genero">Masculino</option>                    
-                    <option name= "genero" value="fem" id="genero">Femenino</option>
+                    <option name="genero" value="masc" id="genero">Masculino</option>                    
+                    <option name="genero" value="fem" id="genero">Femenino</option>
                 </select>              
-
             </div>
-            <div class="mg-b formato-form">
+            <div class="form-register">
                 <label for="date">Fecha de Nacimiento</label>
-                <input type="date" name="date" id="date" >
+                <input type="date" name="date" id="date">
             </div>
-            <div class="mg-b formato-form">
+            <div class="form-register">
                 <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
             </div>
-            <div class="mg-b formato-form">
+            <div class="form-register">
                 <input type="password" name="repcontrasena" id="repcontrasena" placeholder="Repetir Contraseña">
             </div>
-            
-
         
-            <nav> 
-                <button class="form-button">Registrarse</button>
-            </nav>
-
+            <button>Registrarse</button>
+        </div>
     </form>
-    
-
-    </main>
     
 </body>
 </html>

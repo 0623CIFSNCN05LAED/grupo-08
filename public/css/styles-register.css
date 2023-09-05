@@ -1,119 +1,60 @@
-.color-azul{
-    color:  #001C3B;
-}
-  
-.color-beige{
-    color:  #B0A386;
-}
-.color-gris{
-    color:  #D9D9D9;
-}
-.color-blanco{
-    color:  white;
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Roboto'; 
 }
 
-.bg-azul{
-    background: #001C3B;
+
+.form-register{
+    position: relative;
 }
 
-.border-rad-5{
-    border-radius: 10%;
-}
-
-.fz-30{
-    font-size: 30px;
-}
-.fz-20{
-    font-size: 20px;
-}
-
-.w-200px{
-    width: 200px;
-}
-.w-30{
-    width: 30%
-}
-.w-100{
-    width: 100%
-}
-.ta-center{
-    text-align: center;
-}
-.ta-left{
-    text-align: left;
-}
-
-.mg-b{
-    margin-bottom: 10px;
-}
-
-.mb-5 {
-    margin-bottom: 5px;
-}
-
-.mg-top-30{
-    margin-top: 30;
-}
-.mg-top-50{
-    margin-top: 50;
-}
-
-.formato-total{
+.form-body{
     position: relative;
     width: 400px;
-    height: 90%;;
-    padding: 15px;
-    border: #001C3B solid 3px;
+    border: solid 3px #001C3B;
+    margin: auto;
+}
+
+.form-body img{
+    width: 200px;
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 5px;
+    margin-top: 50px;
+}
+
+.text{
     text-align: center;
-    margin: auto;
-    font-family: "Roboto";
-}
-
-.formato-form{
-    width: 60%;
-    text-align: right;
-    margin: auto;
-    margin-bottom: 10px;
-}
-
-.formato-form label{
-    display: block; 
-    width: 100%;
-    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
     color: #001C3B;
+    margin-bottom: 25px;
 }
 
-.formato-form input{
-    display:block;    
-    width: 100%;
-    text-align: left;
-    padding: 10px;
+.form-body input{
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+    width: 60%;
+    padding: 8px;
     color: gray;
     border: 3px solid #001C3B;
-    font-size: 14px;
-    outline:none;
-}
-.formato-form select{
-    display:block;
-    padding: 5px;
-    color: #001C3B;
-    border-radius: 0%;
-    border: 3px solid #001C3B;
+    font-size: 16px;
 }
 
 ::placeholder {
     font-size: 16px;
     color: gray;
 }
-.disp-block{
-    display: block;
-}
 
-.form-button{
+.form-body button{
     display: block;
     margin: auto;
     margin-top: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 50px;
     height: 40px;
     width: 30%;
     background-color: #001C3B;
@@ -121,13 +62,29 @@
     border: none;
     font-size: 14px;
 }
-    
-@media (max-width:769px){
-    .formato-total{
-        width: 90%;
+
+.form-body label {
+    display: block;
+    margin: auto;
+    width: 60%;
+    padding: 5px;
+    color: #001C3B;
+    font-size: 16px;
+}
+
+.form-body select {
+    display: block;
+    margin: auto;
+    width: 60%;
+    padding: 8px;
+    color: gray;
+    font-size: 14px;
+    border: 3px solid #001C3B;
+    margin-bottom: 8px;
+}
+
+@media (max-width:481px){
+    .form-body{
+        border: none;
     }
-    .formato-form{
-        width: 80%;
-    }
-    
 }
