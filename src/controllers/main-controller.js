@@ -1,27 +1,29 @@
-
 module.exports = {
-    index: (req, res) =>{
-        res.render("index")
-    },
+  index: (req, res) => {
+    res.render('index');
+  },
 
-    login: (req, res) =>{
-        res.render("login")
-    },
-    
-    register: (req, res) =>{
-        res.render("register")
-    },
+  login: (req, res) => {
+    res.render('login');
+  },
 
-    productCart: (req, res) =>{
-        res.render("productCart")
-    },
+  register: (req, res) => {
+    res.render('register');
+  },
 
-    productDetail: (req, res) =>{
-        res.render("productDetail")
-    },
+  productCart: (req, res) => {
+    res.render('productCart');
+  },
 
-    productAdd: (req, res) =>{
-        res.render("productAdd")
-    },
+  productDetail: (req, res) => {
+    res.render('productDetail');
+  },
 
-}
+  productAdd: (req, res) => {
+    res.render('productAdd');
+  },
+
+  products: (req, res) => {
+    res.render('products');
+  },
+};
