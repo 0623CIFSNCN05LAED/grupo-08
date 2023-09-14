@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "name": "Quatix 7111",
+    "marca": "Garmin",
+    "description": "descripcion generica",
+    "category": "sport",
+    "stock": true,
+    "color": "black",
+    "price": 15000,
+    "Delivery": "free",
+    "promotion": "3 cuotas sin interes",
+    "image": "default-image.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Quatix 7112",
+    "marca": "Garmin",
+    "description": "descripcion generica 2",
+    "category": "sport",
+    "stock": true,
+    "color": "black",
+    "price": 10000,
+    "Delivery": "free",
+    "promotion": "3 cuotas sin interes",
+    "image": "default-image.jpeg"
+  }
+]
