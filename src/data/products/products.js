@@ -15,7 +15,7 @@ module.exports = {
     return products;
   },
 
-  find: function () {
+  showAll: function () {
     return this.getProducts();
   },
   /*
