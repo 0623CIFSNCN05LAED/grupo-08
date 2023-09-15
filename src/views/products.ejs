@@ -1,27 +1,56 @@
 <!doctype html>
-<html lang="es">
-  <!-- Include Head incluir partials -->
+<html lang="en">
+  <head>
+    <%- include("partials/head") %>
+    <link rel="stylesheet" href="/css/styles-productDetail.css" />
+
+    <title>Kairos</title>
+    <h1>FALTA CONFIGURAR SE MUESTREN TODOS LOS PRODUCTOS</h1>
+  </head>
+
+  <%- include("partials/header") %>
 
   <body>
-    <!-- Header incluir partials -->
+    <main>
+      <section class="productDetail">
+        <article class="productDetail-d">
+          <img
+            class="productPhoto"
+            src="/images/700_700-quatix7111.jpg"
+            alt="Quatix 7X Solar Edition"
+          />
+          <div class="productText">
+            <img
+              class="productLogo"
+              src="/images/logo-garmin.jpg"
+              alt="Logo Garmin"
+            />
+            <h6 class="productNumber">SKU: 010-02541-61</h6>
+            <h1 class="productName">Quatix 7X Solar Edition</h1>
+            <h1 class="productPrice">$1.105.999</h1>
+            <h5 class="productPricePay">¡Hasta 12 cuotas sin interés!</h5>
+            <h5 class="productPriceOff">¡20% OFF en 1 pago!</h5>
+            <button class="buttonBuy">LO QUIERO</button>
+          </div>
+        </article>
+        <article class="productDescription-d">
+          <div class="description">
+            <h4>Descripción</h4>
+            <p class="textDescription">
+              TRAZA LA RUTA A TU PARAÍSO PARTICULAR EN EL AGUA Y MÁS ALLÁ.
+              Gracias a quatix® 7X Solar Edition, el reloj náutico multideporte
+              con GPS y carga solar, contarás con todas las funciones que
+              necesitas en la embarcación y fuera de ella.
+            </p>
+          </div>
+          <div class="specifications">
+            <h4>Especificaciones</h4>
+            <p class="textDescription">Cuadro</p>
+          </div>
+        </article>
+      </section>
+    </main>
 
-    <!-- /Header -->
-
-    <!-- todos los productos -->
-    <div>
-      <div>
-        <div>
-          <h2>Todos los productos a Mostrar</h2>
-        </div>
-        <!-- /todos los productos / definir la logica de vista-->
-
-        <!-- /todos los productos -->
-      </div>
-    </div>
-    <!-- /todos los productos -->
-
-    <!-- footer incluir partials-->
-
-    <!-- /footer -->
+    <%- include("partials/footer") %>
   </body>
 </html>

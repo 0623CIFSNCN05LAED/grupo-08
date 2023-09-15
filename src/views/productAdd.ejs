@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     
@@ -10,32 +11,61 @@
 
 <body>
 
-    <form action="" method="post">
+    <form action="/products" method="post" enctype="multipart/form-data">
         <div class="form-body">
             <img src="/images/kairos-logo-un-color-azul.png" alt="kairos-logo-un-color-azul">
-            <p class="text">Cargar y modificar productos</p>
+            <p class="text">Cargar productos</p>
         
         <div class="form-register">
-            <input  type="text" name="nombreproducto" id="nombreproducto" placeholder="Producto">
+            <input  type="text" name="nombreproducto" id="nombreproducto" placeholder="Modelo Reloj">
+        </div>
+        <div class="form-register">
+            <input  type="text" name="marca" id="marca" placeholder="Marca">
+        </div>
+        <div class="form-register">
+            <input  type="text" name="sku" id="sku" placeholder="SKU">
         </div>
         <div class="form-register">
             <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion">
         </div>
         <div class="form-register">
-            <input type="file" name="imagen" accept=".jpg" placeholder="Imagen">
+            <select name="category" id="category">
+                            <option value="">Categoria</option>
+                            <option value="sports">Deporte</option>
+                            <option value="outdoor">Outdoor</option>
+                            <option value="moda">Moda</option>
+                        </select>
         </div>
         <div class="form-register">
-            <input type="categoria" name="categoria" id="categoria" placeholder="Categoria">            
+            <input type="text" name="color" id="color" placeholder="Color">
         </div>
         <div class="form-register">
-            <input type="colores" name="colores" id="colores" placeholder="Colores">
+            <input type="number" name="precio" id="precio" placeholder="Precio">
         </div>
         <div class="form-register">
-            <input type="precio" name="precio" id="precio" placeholder="precio">
+            <select name="delivery" id="delivery">
+                            <option value="">Seleccionar tipo Envio</option>
+                            <option value="free">Envio Gratis</option>
+                            <option value="charge">sin promo</option>
+                        </select>
         </div>
-    
-        <button>Modificar Producto</button>
-        <button>Cargar Producto</button>
+        <select name="stock" id="stock">
+                            <option value="">Estado Stock</option>
+                            <option value="true">En Stock</option>
+                            <option value="false">Sin Stock</option>
+                        </select>
+        <div class="form-register">
+            <input type="text" name="promotion" id="promotion" placeholder="Promocion">
+        </div>
+        <div class="form-register">
+            <input type="number" name="discount" id="discount" placeholder="Descuento">
+        </div>
+        <div class="form-register">
+            <label for="image" >Imagen Producto:</label>
+            <input type="file" name="image" placeholder="Imagen del Producto">
+        </div>
+        
+        <button type="submit">GUARDAR PRODUCTO</button>
 
     </form>
     

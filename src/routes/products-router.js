@@ -29,14 +29,15 @@ router.get("/Detail", productsController.productDetail);
 // *** PRODUCT CART ***/
 router.get("/Cart", productsController.productCart);
 
+/*** CREATE ONE PRODUCT ***/
+router.get("/add", productsController.add);
+router.post("/", upload.single("image"), productsController.store);
+// el "image" viene del form
+
 /*** GET ONE PRODUCT BY ID ***/
 router.get("/:id/", productsController.detailById);
 
 /*
-router.get("/productAdd", mainController.productAdd)
-/products (POST) Acción de creación (a donde se envía el formulario)
-
-
 /products/ :id /edit (GET)
 Formulario de edición de productos
 
@@ -45,9 +46,6 @@ Acción de edición (a donde se envía el formulario):
 
 /products/ :id (DELETE)
 Acción de borrado
-
-
-
 */
 
 module.exports = router;

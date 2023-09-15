@@ -10,16 +10,4 @@ module.exports = {
   register: (req, res) => {
     res.render("register");
   },
-
-  productCart: (req, res) => {
-    res.render("productCart");
-  },
-
-  productAdd: (req, res) => {
-    res.render("productAdd");
-  },
-
-  products: (req, res) => {
-    res.render("products");
-  },
 };

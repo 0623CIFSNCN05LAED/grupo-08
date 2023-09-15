@@ -23,18 +23,19 @@ module.exports = {
     const product = this.getProducts().find((product) => product.id == id);
     return product;
   },
-  /*create: function (product) {
+  create: function (product) {
     // aca crea el producto
     console.log(`Creating product ${product.name}`);
-    // para crear nuevo ID
     const products = this.getProducts(); // traigo todos los productos
     const newProduct = {
       id: uuidv4(),
       ...product, // este product viene de la function
     };
     products.push(newProduct); // push con los nuevos datos
-    this.saveProducts(products); // products vienen de products.js
+    this.saveProducts(products); //
   },
+
+  /*
   update: function (id, product) {
     console.log(`Updating product ${product.name}`);
     //cargo todos los productos
