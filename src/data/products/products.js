@@ -18,12 +18,12 @@ module.exports = {
   showAll: function () {
     return this.getProducts();
   },
-  /*
+
   findById: function (id) {
     const product = this.getProducts().find((product) => product.id == id);
     return product;
   },
-  create: function (product) {
+  /*create: function (product) {
     // aca crea el producto
     console.log(`Creating product ${product.name}`);
     // para crear nuevo ID

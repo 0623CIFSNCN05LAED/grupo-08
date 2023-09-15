@@ -1,16 +1,20 @@
 [
   {
     "id": 1,
-    "name": "Quatix 7111",
+    "name": "Quatix 7X Solar Edition",
     "marca": "Garmin",
-    "description": "descripcion generica",
+    "sku": "010-02541-61",
+    "description": "TRAZA LA RUTA A TU PARAÍSO PARTICULAR EN EL AGUA Y MÁS ALLÁ. Gracias a quatix® 7X Solar Edition, el reloj náutico multideporte con GPS y carga solar, contarás con todas las funciones que necesitas en la embarcación y fuera de ella.",
     "category": "sport",
+    "specs": "Carga Solar, 60 hs de bateria, 16 modos de deporte, Body de Aluminio",
     "stock": true,
     "color": "black",
     "price": 15000,
-    "Delivery": "free",
+    "delivery": "free",
     "promotion": "3 cuotas sin interes",
-    "image": "default-image.jpeg"
+    "discount": 20,
+    "logo": "default-logo.jpg",
+    "image": "700_700-quatix7111.jpg"
   },
   {
     "id": 2,
@@ -18,11 +22,14 @@
     "marca": "Garmin",
     "description": "descripcion generica 2",
     "category": "sport",
+    "specs": "Carga a cuerda sin pila y dura poco",
     "stock": true,
     "color": "black",
     "price": 10000,
-    "Delivery": "free",
+    "delivery": "free",
     "promotion": "3 cuotas sin interes",
+    "discount": 20,
+    "logo": "default-logo.jpg",
     "image": "default-image.jpeg"
   }
 ]

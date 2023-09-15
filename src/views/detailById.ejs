@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include("partials/head") %>
+    <link rel="stylesheet" href="/css/styles-productDetail.css" />
+
+    <title>Kairos</title>
+  </head>
+
+  <%- include("partials/header") %>
+
+  <body>
+    <main>
+      <section class="productDetail">
+        <article class="productDetail-d">
+          <img
+            class="productPhoto"
+            src="/images/<%= product.image %>"
+            alt="image"
+          />
+          <div class="productText">
+            <img
+              class="productLogo"
+              src="/images/<%= product.logo %>"
+              alt="Logo"
+            />
+            <h6 class="productNumber">SKU: <%= product.sku %></h6>
+            <h1 class="productName"><%= product.name %></h1>
+            <h1 class="productPrice">$<%= product.price %></h1>
+            <h5 class="productPricePay">Hasta <%= product.promotion %>!</h5>
+            <h5 class="productPriceOff">
+              <%= product.discount %> % OFF en 1 pago!
+              <button class="buttonBuy">EDITAR</button>
+              <button class="buttonBuy">ELIMINAR</button>
+            </h5>
+          </div>
+        </article>
+
+        <article class="productDescription-d">
+          <div class="description">
+            <h4>Descripción</h4>
+            <p class="textDescription"><%= product.description %></p>
+          </div>
+          <div class="specifications">
+            <h4>Especificaciones</h4>
+            <p class="textDescription"><%= product.specs %></p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <%- include("partials/footer") %>
+  </body>
+</html>

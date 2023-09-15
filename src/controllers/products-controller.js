@@ -8,6 +8,19 @@ const controller = {
     res.render("products", { products });
   },
 
+  productDetail: (req, res) => {
+    res.render("productDetail");
+  },
+
+  detailById: (req, res) => {
+    const id = req.params.id;
+    const product = productServices.getProduct(id);
+    res.render("detailById", { product });
+  },
+  productCart: (req, res) => {
+    res.render("productCart");
+  },
+
   // restantes agregar
 };
 
