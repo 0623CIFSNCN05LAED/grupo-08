@@ -44,6 +44,7 @@ const controller = {
       logo: "default-logo.jpg",
       description: req.body.description,
       category: req.body.category,
+      specs: req.body.specs,
       image: req.file ? req.file.filename : "default-image.jpeg",
     };
     productServices.createProduct(product); // aca manda a la base de datos a travez del servicio

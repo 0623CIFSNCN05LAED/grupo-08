@@ -4,13 +4,13 @@ const path = require("path");
 const multer = require("multer");
 
 const storage = multer.diskStorage({
-  // configuracion de guardado // falta probar
+  // configuracion de guardado //
   destination: path.join(__dirname, "../../public/images/"), // destino donde va a guardar el archivo
   filename: function (req, file, cb) {
     cb(
       null,
       file.fieldname + "-" + Date.now() + path.extname(file.originalname)
-    ); // extname toma la extension del archivo, original name, deja el original
+    ); // original name, deja extension del archivo
   },
 });
 
@@ -32,7 +32,7 @@ router.get("/Cart", productsController.productCart);
 /*** CREATE ONE PRODUCT ***/
 router.get("/add", productsController.add);
 router.post("/", upload.single("image"), productsController.store);
-// el "image" viene del form
+// "image" viene del form // Flta ver como subir dos fotos para el logo del producto
 
 /*** GET ONE PRODUCT BY ID ***/
 router.get("/:id/", productsController.detailById);
