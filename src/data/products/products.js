@@ -1,16 +1,16 @@
-const fs = require('fs');
-const path = require('path');
-const { v4: uuidv4 } = require('uuid');
+const fs = require("fs");
+const path = require("path");
+const { v4: uuidv4 } = require("uuid");
 
 module.exports = {
   getProducts: function () {
-    const productsFilePath = path.join(__dirname, './productsDataBase.json');
-    const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+    const productsFilePath = path.join(__dirname, "./productsDataBase.json");
+    const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
     return products;
   },
 
-  /*saveProducts: function (products) {
-    const productsFilePath = path.join(__dirname, './productsDataBase.json');
+  saveProducts: function (products) {
+    const productsFilePath = path.join(__dirname, "./productsDataBase.json");
     fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2)); // escribo la base de datos
     return products;
   },
@@ -18,6 +18,7 @@ module.exports = {
   find: function () {
     return this.getProducts();
   },
+  /*
   findById: function (id) {
     const product = this.getProducts().find((product) => product.id == id);
     return product;
