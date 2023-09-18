@@ -1,50 +1,64 @@
-<html lang="en">
-<head>
-    
+<html lang="es">
+  <head>
     <%- include("partials/head") %>
-    <link rel="stylesheet" href="/css/styles-register.css">
-    
+    <link rel="stylesheet" href="/css/styles-register.css" />
 
     <title>Kairos Register</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <form action="" method="post">
+      <div class="form-body">
+        <img
+          src="/images/kairos-logo-un-color-azul.png"
+          alt="kairos-logo-un-color-azul"
+        />
+        <p class="text">Registro</p>
 
-        <form action="" method="post">
-            <div class="form-body">
-                <img src="/images/kairos-logo-un-color-azul.png" alt="kairos-logo-un-color-azul">
-                <p class="text">Registro</p>
-            
-            <div class="form-register">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-            </div>
-            <div class="form-register">
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-            </div>
-            <div class="form-register">
-                <input type="email" name="email" id="email" placeholder="Email">
-            </div>
-            <div class="form-register">
-                <label for="genero">Género</label>
-                <select name="genero" id="genero">
-                    <option name="genero" value="masc" id="genero">Masculino</option>                    
-                    <option name="genero" value="fem" id="genero">Femenino</option>
-                </select>              
-            </div>
-            <div class="form-register">
-                <label for="date">Fecha de Nacimiento</label>
-                <input type="date" name="date" id="date">
-            </div>
-            <div class="form-register">
-                <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
-            </div>
-            <div class="form-register">
-                <input type="password" name="repcontrasena" id="repcontrasena" placeholder="Repetir Contraseña">
-            </div>
-        
-            <button>Registrarse</button>
+        <div class="form-register">
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
         </div>
+        <div class="form-register">
+          <input
+            type="text"
+            name="apellido"
+            id="apellido"
+            placeholder="Apellido"
+          />
+        </div>
+        <div class="form-register">
+          <input type="email" name="email" id="email" placeholder="Email" />
+        </div>
+        <div class="form-register">
+          <label for="genero">Género</label>
+          <select name="genero" id="genero">
+            <option name="genero" value="masc" id="genero">Masculino</option>
+            <option name="genero" value="fem" id="genero">Femenino</option>
+          </select>
+        </div>
+        <div class="form-register">
+          <label for="date">Fecha de Nacimiento</label>
+          <input type="date" name="date" id="date" />
+        </div>
+        <div class="form-register">
+          <input
+            type="password"
+            name="contrasena"
+            id="contrasena"
+            placeholder="Contraseña"
+          />
+        </div>
+        <div class="form-register">
+          <input
+            type="password"
+            name="repcontrasena"
+            id="repcontrasena"
+            placeholder="Repetir Contraseña"
+          />
+        </div>
+
+        <button>Registrarse</button>
+      </div>
     </form>
-    
-</body>
+  </body>
 </html>
