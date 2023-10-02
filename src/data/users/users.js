@@ -19,4 +19,16 @@ module.exports = {
   showAll: function () {
     return this.getUsers();
   },
+
+  create: function (user) {
+    // aca crea el producto
+    console.log(`Creating user ${user.first_name}`);
+    const users = this.getUsers(); // traigo todos los productos
+    const newUser = {
+      id: uuidv4(),
+      ...user, // este product viene de la function
+    };
+    users.push(newUser); // push con los nuevos datos
+    this.saveUsers(users); //
+  },
 };

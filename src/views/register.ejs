@@ -4,14 +4,14 @@
   <%- include("partials/head") %>
     <link rel="stylesheet" href="/css/styles-register.css" />
 
-    <title>Kairos Register</title>
+    <title>Kairos Registro</title>
 </head>
 
 <body>
-  <form action="" method="post">
+  <form action="/users/register" method="post" enctype="multipart/form-data">
     <div class="form-body">
       <img src="/images/kairos-logo-un-color-azul.png" alt="kairos-logo-un-color-azul" />
-      <p class="text">Registro</p>
+      <p class="text">Registrate</p>
 
       <div class="form-register">
         <input type="text" name="first_name" id="name" placeholder="Nombre" />
@@ -36,11 +36,13 @@
       <div class="form-register">
         <input type="password" name="password" id="password" placeholder="Contraseña" />
       </div>
-      <div class="form-register">
-        <input type="password" name="check_password" id="check_password" placeholder="Repetir Contraseña" />
+
+      <div>
+        <label for="avatar">Elige tu foto de perfil</label>
+        <input type="file" name="avatar" id="avatar" />
       </div>
 
-      <button>Registrarse</button>
+      <button type="submit">Registrarse</button>
     </div>
   </form>
 </body>

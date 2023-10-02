@@ -1,29 +1,42 @@
 [
   {
+    "id": 1,
     "first_name": "Moe",
     "last_name": "Howard",
     "email": "howardmoe@gmail.com",
     "birth_date": "05/06/1897",
     "gender": "male",
     "password": "password123",
-    "check_password": "password123"
+    "avatar": "user-default-image"
   },
   {
+    "id": 2,
     "first_name": "Larry",
     "last_name": "Fine",
     "email": "larryfine@gmail.com",
     "birth_date": "05/10/1902",
     "gender": "male",
     "password": "ILovePancakes",
-    "check_password": "ILovePancakes"
+    "avatar": "user-default-image"
   },
   {
+    "id": 3,
     "first_name": "Curly",
     "last_name": "Howard",
     "email": "curlyhoward123@gmail.com",
     "birth_date": "22/10/1903",
     "gender": "male",
     "password": "pass1234",
-    "check_password": "pass1234"
+    "avatar": "user-default-image"
+  },
+  {
+    "id": "0b92739d-d0df-4d29-a6ac-32a44610243f",
+    "first_name": "Gera",
+    "last_name": "Z",
+    "email": "gz@gmail.com",
+    "birth_date": "1982-12-31",
+    "gender": "male",
+    "password": "123456",
+    "avatar": "avatar-1696270198490.jpg"
   }
 ]

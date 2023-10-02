@@ -4,6 +4,10 @@ const usersServices = {
   getAllProducts: () => {
     return db.users.showAll();
   },
+  create: (user) => {
+    db.users.create(user);
+  },
+
   /*getProduct: (id) => {
     const product = db.products.findById(id);
     return product;

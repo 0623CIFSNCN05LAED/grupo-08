@@ -23,4 +23,14 @@ const usersController = require("../controllers/users-controller");
 router.get("/login", usersController.login);
 router.get("/register", usersController.register);
 
+/*** CREATE USER ***/
+// Formulario de registro
+router.get("/register", usersController.register);
+// Procesar el registro
+router.post(
+  "/register",
+  upload.single("avatar"),
+  usersController.processRegister
+);
+
 module.exports = router;
