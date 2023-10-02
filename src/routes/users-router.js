@@ -19,7 +19,7 @@ const upload = multer({ storage: storage });
 // ************ Controller Require ************
 const usersController = require("../controllers/users-controller");
 
-// Rutas USers
+// Routes Users
 router.get("/login", usersController.login);
 router.get("/register", usersController.register);
 
