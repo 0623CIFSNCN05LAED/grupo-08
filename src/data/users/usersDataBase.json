@@ -1,29 +1,29 @@
 [
-    {
-      "nombre": "Moe",
-      "apellido": "Howard",
-      "email": "howardmoe@gmail.com",
-      "date": "05/06/1897",
-      "genero": "masc",
-      "contrasena": "password123",
-      "repcontrasena": "password123"
-    },
-    {
-      "nombre": "Larry",
-      "apellido": "Fine",
-      "email": "larryfine@gmail.com",
-      "date":"05/10/1902",
-      "genero": "masc",
-      "contrasena": "ILovePancakes",
-      "repcontrasena": "ILovePancakes"
-    },
-    {
-      "nombre": "Curly",
-      "apellido": "Howard",
-      "email": "curlyhoward123@gmail.com",
-      "date":"22/10/1903",
-      "genero": "masc",
-      "contrasena": "pass1234",
-      "repcontrasena": "pass1234"
-    }
+  {
+    "first_name": "Moe",
+    "last_name": "Howard",
+    "email": "howardmoe@gmail.com",
+    "birth_date": "05/06/1897",
+    "gender": "male",
+    "password": "password123",
+    "check_password": "password123"
+  },
+  {
+    "first_name": "Larry",
+    "last_name": "Fine",
+    "email": "larryfine@gmail.com",
+    "birth_date": "05/10/1902",
+    "gender": "male",
+    "password": "ILovePancakes",
+    "check_password": "ILovePancakes"
+  },
+  {
+    "first_name": "Curly",
+    "last_name": "Howard",
+    "email": "curlyhoward123@gmail.com",
+    "birth_date": "22/10/1903",
+    "gender": "male",
+    "password": "pass1234",
+    "check_password": "pass1234"
+  }
 ]
