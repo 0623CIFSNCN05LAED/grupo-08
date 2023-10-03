@@ -1,12 +1,13 @@
 const usersServices = require("../services/users-service");
+const bcrypt = require("bcryptjs");
 
 const controller = {
   login: (req, res) => {
-    res.render("login");
+    res.render("users/login");
   },
 
   register: (req, res) => {
-    res.render("register");
+    res.render("users/register");
   },
   processRegister: (req, res) => {
     const user = {
@@ -15,11 +16,11 @@ const controller = {
       email: req.body.email,
       birth_date: req.body.birth_date,
       gender: req.body.gender,
-      password: req.body.password,
+      password: bcrypt.hashSync(req.body.password, 10), //password encriptado
       avatar: req.file ? req.file.filename : "user-default-image.jpeg",
     };
-    usersServices.create(user); // aca manda a la base de datos via servicio
-    res.redirect("/products");
+    usersServices.create(user); // Via servicio graba en base de datos
+    res.redirect("/products"); //redirijo a products al finalizar
   },
 };
 

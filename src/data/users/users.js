@@ -1,6 +1,7 @@
 // USERS - CREATE SAVE MODIFY DELETE ID
 const fs = require("fs");
 const path = require("path");
+
 const { v4: uuidv4 } = require("uuid");
 
 module.exports = {
@@ -23,12 +24,12 @@ module.exports = {
   create: function (user) {
     // aca crea el producto
     console.log(`Creating user ${user.first_name}`);
-    const users = this.getUsers(); // traigo todos los productos
+    const users = this.getUsers(); // traigo todos los Usuarios
     const newUser = {
       id: uuidv4(),
-      ...user, // este product viene de la function
+      ...user,
     };
     users.push(newUser); // push con los nuevos datos
-    this.saveUsers(users); //
+    this.saveUsers(users); // Graba Usuario nuevo
   },
 };
