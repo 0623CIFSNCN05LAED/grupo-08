@@ -30,9 +30,11 @@
 
                 <a href="/products/cart" class="buttonBuy">LO QUIERO</a>
                 <a href="/products/edit/<%= product.id %>" class="buttonBuy">EDITAR</a>
+                <a href="/products/add/" class="buttonBuy">AGREGAR PRODUCTO</a>
                 <form action="/products/<%= product.id %>?_method=delete" method="POST">
                   <button type="submit" class="submit-button">ELIMINAR</button>
                 </form>
+
 
             </h5>
           </div>
