@@ -1,75 +1,74 @@
-
-
-.title-cart{
-    text-align: center;
-    color: #001C3B;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: solid 2px #D9D9D9;
-    width: 80%;
-    margin: auto;
+main {
+  padding-bottom: 150px;
 }
 
-.cart-icon{
-    padding-right: 8px;
+.title-cart {
+  text-align: center;
+  color: #001c3b;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 2px #d9d9d9;
+  width: 80%;
+  margin: auto;
 }
-.article{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    margin: auto;
-    
+
+.cart-icon {
+  padding-right: 8px;
 }
-.images{
-    width: 25%;
-    padding: 10px;
+.article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  margin: auto;
 }
-.button-discount{
-    display: flex;
-    background-color: #001C3B;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    margin: auto;
+.images {
+  width: 25%;
+  padding: 10px;
 }
-.ticket{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 100px;
-    
+.button-discount {
+  display: flex;
+  background-color: #001c3b;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
 }
-.sub-ticket{
-    padding: 10px;
-    
+.ticket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 100px;
 }
-.total{
-    padding: 10px;
+.sub-ticket {
+  padding: 10px;
 }
-.add-product{
-    display: flex;
-    background-color: white;
-    color:#001C3B;
-    text-align: center;
-    padding: 10px 30px;
-    margin: auto;
-    border: #001C3B solid 3px;
+.total {
+  padding: 10px;
 }
-.end-sale{
-    display: flex;
-    background-color: #001C3B;
-    color: white;
-    padding: 10px 50px;
-    text-align: center;
-    margin: auto;
+.add-product {
+  display: flex;
+  background-color: white;
+  color: #001c3b;
+  text-align: center;
+  padding: 10px 30px;
+  margin: auto;
+  border: #001c3b solid 3px;
+}
+.end-sale {
+  display: flex;
+  background-color: #001c3b;
+  color: white;
+  padding: 10px 50px;
+  text-align: center;
+  margin: auto;
 }
 
 @media (min-width: 728px) {
-    .article{
-        flex-direction: column;
-    }
+  .article {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 1200px) {
