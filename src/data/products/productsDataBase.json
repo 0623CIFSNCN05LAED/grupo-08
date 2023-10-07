@@ -1,22 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "Quatix 7X Solar Edition",
-    "marca": "Garmin",
-    "sku": "010-02541-61",
-    "description": "TRAZA LA RUTA A TU PARAÍSO PARTICULAR EN EL AGUA Y MÁS ALLÁ. Gracias a quatix® 7X Solar Edition, el reloj náutico multideporte con GPS y carga solar, contarás con todas las funciones que necesitas en la embarcación y fuera de ella.",
-    "category": "sport",
-    "stock": true,
-    "color": "black",
-    "price": 15000,
-    "delivery": "free",
-    "promotion": "3 cuotas sin interes",
-    "discount": 20,
-    "logo": "default-logo.jpg",
-    "image": "700_700-quatix7111.jpg",
-    "specs": "Carga Solar, 60 hs de bateria, 16 modos de deporte, Body de Aluminio"
-  },
-  {
     "id": "a6bc021f-b02f-4986-9444-a4e40561856f",
     "name": "Fenix 5",
     "marca": "Garmin",
