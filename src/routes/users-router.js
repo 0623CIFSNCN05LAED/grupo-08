@@ -18,13 +18,15 @@ const upload = multer({ storage: storage });
 
 // ************ Controller Require ************
 const usersController = require("../controllers/users-controller");
+const guestMiddleware = require("../middlewares/guestMiddleware");
+const authMiddleware = require("../middlewares/authMiddleware");
 
 // Routes Users
-router.get("/login", usersController.login);
+router.get("/login", guestMiddleware, usersController.login);
 
 /*** CREATE USER ***/
 // Register form
-router.get("/register", usersController.register);
+router.get("/register", guestMiddleware, usersController.register);
 // register process
 router.post(
   "/register",
