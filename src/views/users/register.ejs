@@ -8,38 +8,96 @@
 </head>
 
 <body>
+
   <form action="/users/register" method="post" enctype="multipart/form-data">
     <div class="form-body">
       <img src="/images/logo/kairos-logo-un-color-azul.png" alt="kairos-logo-un-color-azul" />
       <p class="text">Registrate</p>
 
       <div class="form-register">
-        <input type="text" name="first_name" id="name" placeholder="Nombre" />
+        <input type="text" name="first_name" id="first_name" placeholder="Nombre"
+          value="<%= locals.errors ? oldData.first_name : null %>" />
+
+        <% if (locals.errors && errors.first_name) { %>
+          <div class="text-danger">
+            <%= errors.first_name.msg %>
+          </div>
+          <% } %>
+
       </div>
       <div class="form-register">
-        <input type="text" name="last_name" id="last_name" placeholder="Apellido" />
+        <input type="text" name="last_name" id="last_name" placeholder="Apellido"
+          value="<%= locals.errors ? oldData.last_name : null %>" />
+
+        <% if (locals.errors && errors.last_name) { %>
+          <div class="text-danger">
+            <%= errors.last_name.msg %>
+          </div>
+          <% } %>
+
       </div>
+
       <div class="form-register">
-        <input type="email" name="email" id="email" placeholder="Email" />
+        <input type="email" name="email" id="email" placeholder="Email"
+          value="<%= locals.errors ? oldData.email : null %>" />
+
+        <% if (locals.errors && errors.email) { %>
+          <div class="text-danger">
+            <%= errors.email.msg %>
+          </div>
+          <% } %>
+
       </div>
+
       <div class="form-register">
-        <label for="gender">Género</label>
+        <label for="gender"></label>
         <select name="gender" id="gender">
-          <option name="gender" value="male" id="gender">Masculino</option>
-          <option name="gender" value="female" id="gender">Femenino</option>
+          <option value="" id="">Selecciona tu genero</option>
+          <% let genders=["Masculino", "Femenino" , "Otro" ] %>
+            <% for( const oneGender of genders) { %>
+              <option value="<% oneGender %>" <%=locals.oldData && (oneGender===oldData.gender) ? "selected" : null %>>
+                <%= oneGender %>
+              </option>
+              <% } %>
         </select>
+
+        <% if (locals.errors && errors.gender) { %>
+          <div class="text-danger">
+            <%= errors.gender.msg %>
+          </div>
+          <% } %>
       </div>
+
       <div class="form-register">
         <label for="birth_date">Fecha de Nacimiento</label>
-        <input type="date" name="birth_date" id="birth_date" />
+        <input type="date" name="birth_date" id="birth_date" value="<%= locals.errors ? oldData.birth_date : null %>" />
+
+        <% if (locals.errors && errors.birth_date) { %>
+          <div class="text-danger">
+            <%= errors.birth_date.msg %>
+          </div>
+          <% } %>
       </div>
+
       <div class="form-register">
         <input type="password" name="password" id="password" placeholder="Contraseña" />
+
+        <% if (locals.errors && errors.password) { %>
+          <div class="text-danger">
+            <%= errors.password.msg %>
+          </div>
+          <% } %>
       </div>
 
       <div>
         <label for="avatar">Elige tu foto de perfil</label>
         <input type="file" name="avatar" id="avatar" />
+
+        <% if (locals.errors && errors.avatar) { %>
+          <div class="text-danger">
+            <%= errors.avatar.msg %>
+          </div>
+          <% } %>
       </div>
 
       <button type="submit">Registrarse</button>

@@ -30,13 +30,12 @@ const controller = {
   processRegister: (req, res) => {
     const resultValidation = validationResult(req);
 
-    /* if (resultValidation.errors.length > 0) {
+    if (resultValidation.errors.length > 0) {
       return res.render("users/register", {
         errors: resultValidation.mapped(),
         oldData: req.body,
       });
-    } 
-    */
+    }
 
     const user = {
       first_name: req.body.first_name,
@@ -48,7 +47,7 @@ const controller = {
       avatar: req.file ? req.file.filename : "user-default-image.jpeg",
     };
     usersServices.create(user); // Via servicio graba en base de datos
-    res.redirect("/users"); //redirijo a products al finalizar
+    res.redirect("/users"); //redirijo a users al finalizar
   },
 };
 

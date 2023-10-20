@@ -1,90 +1,94 @@
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: 'Roboto'; 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Roboto";
 }
 
-
-.form-register{
-    position: relative;
+.form-register {
+  position: relative;
 }
 
-.form-body{
-    position: relative;
-    width: 400px;
-    border: solid 3px #001C3B;
-    margin: auto;
+.form-body {
+  position: relative;
+  width: 400px;
+  border: solid 3px #001c3b;
+  margin: auto;
 }
 
-.form-body img{
-    width: 200px;
-    display: block;
-    margin: 20px auto;
-    margin-bottom: 5px;
-    margin-top: 50px;
+.form-body img {
+  width: 200px;
+  display: block;
+  margin: 20px auto;
+  margin-bottom: 5px;
+  margin-top: 50px;
 }
 
-.text{
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: #001C3B;
-    margin-bottom: 25px;
+.text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #001c3b;
+  margin-bottom: 25px;
 }
 
-.form-body input{
-    display: block;
-    margin: auto;
-    margin-bottom: 8px;
-    width: 60%;
-    padding: 8px;
-    color: gray;
-    border: 3px solid #001C3B;
-    font-size: 16px;
+.form-body input {
+  display: block;
+  margin: auto;
+  margin-bottom: 8px;
+  width: 60%;
+  padding: 8px;
+  color: gray;
+  border: 3px solid #001c3b;
+  font-size: 16px;
 }
 
 ::placeholder {
-    font-size: 16px;
-    color: gray;
+  font-size: 16px;
+  color: gray;
 }
 
-.form-body button{
-    display: block;
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 50px;
-    height: 40px;
-    width: 30%;
-    background-color: #001C3B;
-    color: white;
-    border: none;
-    font-size: 14px;
+.form-body button {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  height: 40px;
+  width: 30%;
+  background-color: #001c3b;
+  color: white;
+  border: none;
+  font-size: 14px;
 }
 
 .form-body label {
-    display: block;
-    margin: auto;
-    width: 60%;
-    padding: 5px;
-    color: #001C3B;
-    font-size: 16px;
+  display: block;
+  margin: auto;
+  width: 60%;
+  padding: 5px;
+  color: #001c3b;
+  font-size: 16px;
 }
 
 .form-body select {
-    display: block;
-    margin: auto;
-    width: 60%;
-    padding: 8px;
-    color: gray;
-    font-size: 14px;
-    border: 3px solid #001C3B;
-    margin-bottom: 8px;
+  display: block;
+  margin: auto;
+  width: 60%;
+  padding: 8px;
+  color: gray;
+  font-size: 14px;
+  border: 3px solid #001c3b;
+  margin-bottom: 8px;
 }
 
-@media (max-width:481px){
-    .form-body{
-        border: none;
-    }
+.text-danger {
+  color: red;
+  text-align: center;
+}
+
+@media (max-width: 481px) {
+  .form-body {
+    border: none;
+  }
 }
