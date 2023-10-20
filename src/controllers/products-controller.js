@@ -30,17 +30,8 @@ const controller = {
     const product = {
       name: req.body.name,
       marca: req.body.marca,
-      sku: req.body.sku,
-      stock: req.body.stock,
-      color: req.body.color,
       price: Number(req.body.price),
-      delivery: req.body.delivery,
-      promotion: req.body.promotion,
-      discount: Number(req.body.discount),
-      logo: "logo-garmin.jpg",
       description: req.body.description,
-      category: req.body.category,
-      specs: req.body.specs,
       image: req.file ? req.file.filename : "default-image.jpeg",
     };
     productServices.createProduct(product); // aca manda a la base de datos via servicio

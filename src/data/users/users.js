@@ -22,7 +22,7 @@ module.exports = {
   },
 
   create: function (user) {
-    // aca crea el producto
+    // aca crea el usuario
     console.log(`Creating user ${user.first_name}`);
     const users = this.getUsers(); // traigo todos los Usuarios
     const newUser = {
