@@ -1,0 +1,50 @@
+<html lang="es">
+
+<head>
+    <%- include("../partials/head") %>
+        <link rel="stylesheet" href="/css/styles-register.css" />
+
+        <title>Kairos Registro</title>
+</head>
+
+<body>
+    <form action="/users/register" method="post" enctype="multipart/form-data">
+        <div class="form-body">
+            <img src="/images/logo/kairos-logo-un-color-azul.png" alt="kairos-logo-un-color-azul" />
+            <p class="text">Registrate</p>
+
+            <div class="form-register">
+                <input type="text" name="first_name" id="name" placeholder="Nombre" />
+            </div>
+            <div class="form-register">
+                <input type="text" name="last_name" id="last_name" placeholder="Apellido" />
+            </div>
+            <div class="form-register">
+                <input type="email" name="email" id="email" placeholder="Email" />
+            </div>
+            <div class="form-register">
+                <label for="gender">Género</label>
+                <select name="gender" id="gender">
+                    <option name="gender" value="male" id="gender">Masculino</option>
+                    <option name="gender" value="female" id="gender">Femenino</option>
+                </select>
+            </div>
+            <div class="form-register">
+                <label for="birth_date">Fecha de Nacimiento</label>
+                <input type="date" name="birth_date" id="birth_date" />
+            </div>
+            <div class="form-register">
+                <input type="password" name="password" id="password" placeholder="Contraseña" />
+            </div>
+
+            <div>
+                <label for="avatar">Elige tu foto de perfil</label>
+                <input type="file" name="avatar" id="avatar" />
+            </div>
+
+            <button type="submit">Registrarse</button>
+        </div>
+    </form>
+</body>
+
+</html>

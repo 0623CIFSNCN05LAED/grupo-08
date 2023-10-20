@@ -28,60 +28,19 @@
                 <label for="marca">Marca</label>
                 <input type="text" name="marca" id="marca" placeholder="Marca" value="<%= product.marca %>">
             </div>
-            <div class="form-register">
-                <label for="sku">SKU</label>
-                <input type="text" name="sku" id="sku" placeholder="SKU" value="<%= product.sku %>">
-            </div>
+
             <div class="form-register">
                 <label for="description">Descripcion</label>
                 <input type="text" name="description" id="description" placeholder="Descripcion"
                     value="<%= product.description %>">
-            </div>
-            <div class="form-register">
-                <label for="category">Seleccione Categoria</label>
-                <select name="category" id="category">
 
-                    <option value="sports" <%=product.category ? "selected" : "" %>>Deporte</option>
-                    <option value="outdoor" <%=product.category ? "selected" : "" %>>Outdoor</option>
-                    <option value="moda" <%=product.category ? "selected" : "" %>>Moda</option>
-                </select>
-            </div>
-            <div class="form-register">
-                <label for="color">Color</label>
-                <input type="text" name="color" id="color" placeholder="Color" value="<%= product.color %>">
-            </div>
-            <div class="form-register">
-                <label for="price">Precio</label>
-                <input type="number" name="price" id="price" placeholder="Precio" value="<%= product.price %>">
-            </div>
-            <div class="form-register">
-                <label for="delivery">Seleccionar tipo Envio</label>
-                <select name="delivery" id="delivery">
-                    <option value="free" <%=product.category ? "selected" : "" %>>Envio Gratis</option>
-                    <option value="charge" <%=product.category ? "selected" : "" %>>sin promo</option>
-                </select>
-            </div>
-            <label for="stock">Estado Stock</label>
-            <select name="stock" id="stock">
-                <option value="true" <%=product.category ? "selected" : "" %>>En Stock</option>
-                <option value="false" <%=product.category ? "selected" : "" %>>Sin Stock</option>
-            </select>
-            <div class="form-register">
-                <label for="promotion">Promocion</label>
-                <input type="text" name="promotion" id="promotion" placeholder="Promocion"
-                    value="<%= product.promotion %>">
-            </div>
-            <div class="form-register">
-                <label for="discount">Descuento</label>
-                <input type="number" name="discount" id="discount" placeholder="Descuento"
-                    value="<%= product.discount %>">
-            </div>
-            <div class="form-register">
-                <label for="specs">Especificaciones</label>
-                <input type="text" name="specs" id="specs" placeholder="Especificaciones" value="<%= product.specs %>">
-            </div>
 
-            <button type="submit">MODIFICAR PRODUCTO</button>
+                <div class="form-register">
+                    <label for="price">Precio</label>
+                    <input type="number" name="price" id="price" placeholder="Precio" value="<%= product.price %>">
+                </div>
+
+                <button type="submit">MODIFICAR PRODUCTO</button>
 
     </form>
 
