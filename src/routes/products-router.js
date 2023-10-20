@@ -23,6 +23,9 @@ const productsController = require("../controllers/products-controller");
 //GET ALL PRODUCTS
 router.get("/", productsController.index);
 
+/*** GET ONE PRODUCT BY ID ***/
+router.get("/:id/", productsController.detailById);
+
 // *** PRODUCT CART ***/
 router.get("/Cart", productsController.productCart);
 
@@ -30,9 +33,6 @@ router.get("/Cart", productsController.productCart);
 router.get("/add", productsController.add);
 router.post("/", upload.single("image"), productsController.store);
 // "image" viene del form // Falta ver como subir dos fotos para el logo del producto
-
-/*** GET ONE PRODUCT BY ID ***/
-router.get("/:id/", productsController.detailById);
 
 /*** EDIT ONE PRODUCT ***/
 //Formulario de edición de productos

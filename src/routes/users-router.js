@@ -22,7 +22,11 @@ const validation = require("../validation/validation-login");
 const validationErrorsLogin = require("../middlewares/login");
 
 // Routes Users
-router.get("/list", usersController.usersList);
+//Get All USers /
+router.get("/", usersController.usersList);
+
+// Get users by ID /
+router.get("/:id/", usersController.detailById);
 
 // Register login
 router.get("/login", usersController.login);

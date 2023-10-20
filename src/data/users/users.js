@@ -22,8 +22,8 @@ module.exports = {
   },
 
   findById: function (id) {
-    const user = this.getUsers().find((user) => user.id == id);
-    return user;
+    const users = this.getUsers().find((user) => user.id == id);
+    return users;
   },
 
   create: function (user) {
