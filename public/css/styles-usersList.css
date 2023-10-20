@@ -1,0 +1,122 @@
+body {
+  font-family: "Roboto";
+  background-color: white;
+}
+
+main {
+  padding: 8px;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.productDetail {
+  width: 80vw;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productDetail article {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.productPhoto {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.productLogo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.productNumber {
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.productName {
+  border: solid red dotted;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.productPrice {
+  border-top: 3px solid #d9d9d9;
+  font-size: 26px;
+  margin-bottom: 5px;
+  padding-top: 20px;
+}
+
+.productPricePay {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.productPriceOff {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.buttonBuy {
+  background-color: #001c3b;
+  color: white;
+  padding: 8px 50px;
+  font-weight: bold;
+  font-family: "Roboto";
+  font-size: 16px;
+  border: none;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.textDescription {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 728px) {
+  /* tablet */
+  .productPhoto {
+    width: 40%;
+  }
+  .productText {
+    width: 40%;
+  }
+  .productDetail-d {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .buttonBuy {
+    margin-left: 0;
+  }
+  .productDescription-d {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .description {
+    width: 45%;
+    margin-bottom: 0;
+  }
+  .specifications {
+    width: 45%;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* desktop */
+}

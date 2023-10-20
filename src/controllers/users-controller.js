@@ -2,13 +2,18 @@ const usersServices = require("../services/users-service");
 const bcrypt = require("bcryptjs");
 
 const controller = {
+  usersList: (req, res) => {
+    const users = usersServices.getAllUsers();
+    res.render("users/usersList", { users });
+  },
+
   login: (req, res) => {
     res.render("users/login");
   },
-  processlogin: (req,res)=>{    
-    const userLogin= req.body;
-    
-    res.render("index", {userLogin})
+  processlogin: (req, res) => {
+    const userLogin = req.body;
+
+    res.render("index", { userLogin });
   },
 
   register: (req, res) => {

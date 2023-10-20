@@ -47,16 +47,8 @@ module.exports = {
 
     productToEdit.name = product.name;
     productToEdit.marca = product.marca;
-    productToEdit.sku = product.sku;
-    productToEdit.color = product.color;
     productToEdit.price = product.price;
-    productToEdit.delivery = product.delivery;
-    productToEdit.promotion = product.promotion;
-    productToEdit.discount = product.discount;
     productToEdit.description = product.description;
-    productToEdit.category = product.category;
-    productToEdit.specs = product.specs;
-
     // guardo los productos
     this.saveProducts(products);
 

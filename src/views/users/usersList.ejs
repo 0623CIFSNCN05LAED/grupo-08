@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <%- include("../partials/head", {title: 'Todos los Usuarios' }) %>
+
+        <link rel="stylesheet" href="/css/styles-usersList.css" />
+
+        <title>Kairos</title>
+
+</head>
+
+
+
+<body>
+
+    <%- include("../partials/headerUsers") %>
+
+        <main>
+
+
+            <div class="title-products">
+
+                <h2>Usuarios</h2>
+
+            </div>
+
+            <!-- Contenedor general -->
+            <div class="main-section">
+
+
+
+                <!-- Contenedor de filtrados -->
+                <div class="main-filters">
+
+
+
+                </div>
+
+
+                <!-- Contenedor de usuarios -->
+                <div class="main-products">
+
+                    <section>
+
+                        <% users.forEach(users=> { %>
+
+                            <%- include("../partials/userCard", {users}) %>
+
+                                <% }) %>
+
+                    </section>
+
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+
+        <%- include("../partials/footer") %>
+
+</body>
+
+</html>
