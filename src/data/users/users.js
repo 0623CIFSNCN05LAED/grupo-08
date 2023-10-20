@@ -22,7 +22,7 @@ module.exports = {
   },
 
   findById: function (id) {
-    const users = this.getUsers().find((user) => user.id == id);
+    const users = this.getUsers().find((users) => users.id == id);
     return users;
   },
 

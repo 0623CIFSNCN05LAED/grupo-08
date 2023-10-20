@@ -5,9 +5,9 @@ const usersServices = {
     return db.users.showAll();
   },
 
-  getUser: () => {
-    const user = db.users.findById(id);
-    return user;
+  getUser: (id) => {
+    const users = db.users.findById(id);
+    return users;
   },
 
   create: (user) => {
