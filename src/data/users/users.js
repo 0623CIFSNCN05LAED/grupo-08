@@ -21,6 +21,11 @@ module.exports = {
     return this.getUsers();
   },
 
+  findById: function (id) {
+    const user = this.getUsers().find((user) => user.id == id);
+    return user;
+  },
+
   create: function (user) {
     // aca crea el usuario
     console.log(`Creating user ${user.first_name}`);
