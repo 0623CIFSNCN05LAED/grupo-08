@@ -25,9 +25,6 @@ const validationErrorsLogin = require("../middlewares/login");
 //Get All USers /
 router.get("/", usersController.usersList);
 
-// Get users by ID /
-router.get("/:id/", usersController.detailById);
-
 // Register login
 router.get("/login", usersController.login);
 router.post(
@@ -36,6 +33,9 @@ router.post(
   validationErrorsLogin,
   usersController.processlogin
 );
+
+// Get users by ID /
+router.get("/:id/", usersController.detailById);
 
 /*** CREATE USER ***/
 // Register form

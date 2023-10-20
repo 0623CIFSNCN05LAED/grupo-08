@@ -9,7 +9,7 @@ const controller = {
   detailById: (req, res) => {
     const id = req.params.id;
     const users = usersServices.getUser(id);
-    res.render("users/usersDetailById", { users });
+    res.render("users/userDetailById", { users });
   },
 
   login: (req, res) => {
