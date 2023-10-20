@@ -6,6 +6,7 @@ const controller = {
     const users = usersServices.getAllUsers();
     res.render("users/usersList", { users });
   },
+
   detailById: (req, res) => {
     const id = req.params.id;
     const users = usersServices.getUser(id);

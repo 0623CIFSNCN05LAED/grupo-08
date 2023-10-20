@@ -34,9 +34,6 @@ router.post(
   usersController.processlogin
 );
 
-// Get users by ID /
-router.get("/:id/", usersController.detailById);
-
 /*** CREATE USER ***/
 // Register form
 router.get("/register", usersController.register);
@@ -46,5 +43,8 @@ router.post(
   upload.single("avatar"),
   usersController.processRegister
 );
+
+// Get users by ID /
+router.get("/:id/", usersController.detailById);
 
 module.exports = router;

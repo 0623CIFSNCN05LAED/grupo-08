@@ -2,18 +2,19 @@
 
 
 
-    <a href="/users/<%= users.id %>"><img src="/images/user/<%= users.avatar %>"></a>
+
 
     <div>
+        <a href="/users/<%= users.id %>">
+            <p class="nombre-producto">
+                <%= users.first_name %>
+                    <%= users.last_name%>
+            </p>
+        </a>
 
-        <p class="nombre-producto">
-            <%= users.first_name %>
-                <%= users.last_name%>
-        </p>
         <p class="descripcion-producto">
             <%= users.email %>
         </p>
-
 
     </div>
 
