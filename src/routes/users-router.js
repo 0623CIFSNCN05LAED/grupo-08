@@ -17,8 +17,11 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 // ************ Controller Require ************
+//requier users controllers
 const usersController = require("../controllers/users-controller");
+// user register validation
 const validationRegister = require("../validation/validation-register");
+// user login validationclear
 const validation = require("../validation/validation-login");
 const validationErrorsLogin = require("../middlewares/login");
 
@@ -49,5 +52,13 @@ router.post(
 
 // Get users by ID /
 router.get("/:id/", usersController.detailById);
+
+//Edit user
+router.get("/edit/:id", usersController.edit);
+//edit process
+router.put("/:id", usersController.update);
+
+// Delete User
+router.delete("/:id", usersController.destroy);
 
 module.exports = router;

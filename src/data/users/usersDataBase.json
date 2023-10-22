@@ -31,12 +31,13 @@
   },
   {
     "id": "b7de0cf9-9455-428d-9ecb-d014a8b2778a",
-    "first_name": "Test1",
+    "first_name": "Test3",
     "last_name": "Test",
     "email": "testmail@gmail.com",
-    "birth_date": "2021-01-01",
+    "birth_date": "",
     "gender": "male",
     "password": "$2a$10$KKJqaETFlkmyIM3PN6TW3O4VMgXKuzCrc09MJOtTr9PN68VyEvYma",
-    "avatar": "avatar-1696333328659.png"
+    "avatar": "avatar-1696333328659.png",
+    "last_marca": "Test"
   }
 ]

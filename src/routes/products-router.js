@@ -23,9 +23,6 @@ const productsController = require("../controllers/products-controller");
 //GET ALL PRODUCTS
 router.get("/", productsController.index);
 
-/*** GET ONE PRODUCT BY ID ***/
-router.get("/:id/", productsController.detailById);
-
 // *** PRODUCT CART ***/
 router.get("/Cart", productsController.productCart);
 
@@ -39,6 +36,9 @@ router.post("/", upload.single("image"), productsController.store);
 router.get("/edit/:id", productsController.edit);
 //Acción de edición (a donde se envía el formulario):
 router.put("/:id", productsController.update);
+
+/*** GET ONE PRODUCT BY ID ***/
+router.get("/:id/", productsController.detailById);
 
 /*** DELETE ONE PRODUCT***/
 router.delete("/:id", productsController.destroy);

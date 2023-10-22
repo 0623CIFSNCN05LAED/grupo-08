@@ -24,9 +24,6 @@ const controller = {
   },
   // Method to store data from form
   store: (req, res) => {
-    console.log("body", req.body);
-    console.log("file", req.file);
-
     const product = {
       name: req.body.name,
       marca: req.body.marca,
@@ -46,7 +43,6 @@ const controller = {
   },
   update: (req, res) => {
     const product = req.body;
-    console.log(req.body);
     const id = req.params.id;
     productServices.updateProduct(id, product);
     res.redirect("/products");

@@ -46,10 +46,7 @@ module.exports = {
   },
 
   update: function (id, user) {
-    console.log(`Updating user ${user.first_name}`);
-    //cargo todos los productos
     const users = this.getUsers();
-    // busco producto por id
     const userToEdit = users.find((user) => user.id == id);
     // piso las propiedades
 
@@ -66,7 +63,6 @@ module.exports = {
   },
 
   delete: function (id) {
-    console.log(`Deleting user with name ${first_name}`);
     const users = this.getUsers();
     const nonDeletedUsers = users.filter((user) => user.id != id);
     this.saveUsers(nonDeletedUsers);

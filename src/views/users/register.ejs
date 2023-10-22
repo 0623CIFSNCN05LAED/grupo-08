@@ -52,13 +52,9 @@
       <div class="form-register">
         <label for="gender"></label>
         <select name="gender" id="gender">
-          <option value="" id="">Selecciona tu genero</option>
-          <% let genders=["Masculino", "Femenino" , "Otro" ] %>
-            <% for( const oneGender of genders) { %>
-              <option value="<% oneGender %>" <%=locals.oldData && (oneGender===oldData.gender) ? "selected" : null %>>
-                <%= oneGender %>
-              </option>
-              <% } %>
+          <option value="">Selecciona tu genero</option>
+          <option value="male" <%=locals.oldData && oldData.gender==="male" ? "selected" : "" %>>Masculino</option>
+          <option value="female" <%=locals.oldData && oldData.gender==="female" ? "selected" : "" %> >Femenino</option>
         </select>
 
         <% if (locals.errors && errors.gender) { %>

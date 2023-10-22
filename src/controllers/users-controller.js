@@ -14,6 +14,7 @@ const controller = {
     res.render("users/userDetailById", { users });
   },
 
+  // Users Login
   login: (req, res) => {
     res.render("users/login");
   },
@@ -23,6 +24,7 @@ const controller = {
     res.render("index", { userLogin });
   },
 
+  // Users Register
   register: (req, res) => {
     res.render("users/register");
   },
@@ -48,6 +50,25 @@ const controller = {
     };
     usersServices.create(user); // Via servicio graba en base de datos
     res.redirect("/users"); //redirijo a users al finalizar
+  },
+
+  edit: (req, res) => {
+    const id = req.params.id;
+    const user = usersServices.getUser(id);
+    res.render("users/userEdit", { user });
+  },
+
+  update: (req, res) => {
+    const user = req.body;
+    const id = req.params.id;
+    usersServices.updateUser(id, user);
+    res.redirect("/users");
+  },
+
+  destroy: (req, res) => {
+    const id = req.params.id;
+    usersServices.deleteUser(id);
+    res.redirect("/users");
   },
 };
 
