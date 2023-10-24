@@ -1,14 +1,14 @@
-const {validationResult}=require("express-validator")
+const { validationResult } = require("express-validator");
 
-module.exports= (req ,res ,next) => {
-    const errors=validationResult(req);
-    if(!errors.isEmpty()){
-        res.redirect("/users/login")
+module.exports = (req, res, next) => {
+  const resultValidation = validationResult(req);
 
-    } else{
-        next()
-    }
-
-}
-
-
+  if (resultValidation.errors.length > 0) {
+    return res.render("users/login", {
+      errors: resultValidation.mapped(),
+      oldData: req.body,
+    });
+  } else {
+    next();
+  }
+};

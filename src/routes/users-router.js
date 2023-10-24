@@ -36,7 +36,6 @@ router.post(
   "/login",
   validation,
   validationErrorsLogin,
-
   usersController.processLogin
 );
 
