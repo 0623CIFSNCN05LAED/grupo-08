@@ -51,15 +51,6 @@ const controller = {
   },
 
   processRegister: (req, res) => {
-    const resultValidation = validationResult(req);
-
-    if (resultValidation.errors.length > 0) {
-      return res.render("users/register", {
-        errors: resultValidation.mapped(),
-        oldData: req.body,
-      });
-    }
-
     const user = {
       first_name: req.body.first_name,
       last_name: req.body.last_name,
