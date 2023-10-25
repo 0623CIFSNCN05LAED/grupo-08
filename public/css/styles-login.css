@@ -98,6 +98,7 @@ input[type="checkbox"] {
 }
 
 .text-danger {
+    
     color: red;
     text-align: center;
 }

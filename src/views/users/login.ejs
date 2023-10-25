@@ -21,21 +21,27 @@
                     value="<%= locals.errors ? oldData.email : null %>" />
 
                 <% if (locals.errors && errors.email) { %>
-                    <div class="text-danger">
-                        <%= errors.email.msg %>
-                    </div>
-                    <% } %>
+                    
 
             </div>
+
+            <div class="text-danger">
+                <%= errors.email.msg %>
+            </div>
+            <% } %>
+
+            
             <div class="form-login">
                 <i class="fa-solid fa-lock"></i>
                 <input type="password" name="password" id="password" placeholder="Contraseña">
                 <% if (locals.errors && errors.password) { %>
-                    <div class="text-danger">
-                        <%= errors.password.msg %>
-                    </div>
-                    <% } %>
             </div>
+            
+            <div class="text-danger">
+                <%= errors.password.msg %>
+            </div>
+            <% } %>
+
             <div class="form-login">
                 <div class="remember-user">
                     <input type="checkbox" class="" name="remember_user">Recordar Usuario

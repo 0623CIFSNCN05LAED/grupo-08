@@ -41,7 +41,8 @@ const controller = {
         }
 
         res.render("users/profile", { userLogin });
-      }
+      } 
+      
     }
   },
 
