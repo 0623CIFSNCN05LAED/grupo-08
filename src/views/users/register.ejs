@@ -9,86 +9,71 @@
 
 <body>
   <%- include("../partials/header") %>
-  
-  <form action="/users/register" method="post" enctype="multipart/form-data">
-    <div class="form-body">
 
-      <div class="text-form">
-        <p class="text">¡Creá una nueva cuenta!</p>
-        <p class="text-medium">Por favor completá con tus datos:</p>
+    <form action="/users/register" method="post" enctype="multipart/form-data">
+      <div class="form-body">
+
+        <div class="text-form">
+          <p class="text">¡Creá una nueva cuenta!</p>
+          <p class="text-medium">Por favor completá con tus datos:</p>
+        </div>
+
+        <div class="form-register">
+          <label>Nombre</label>
+          <input type="text" name="first_name" id="first_name"
+            value="<%= locals.errors ? oldData.first_name : null %>" />
+          <% if (locals.errors && errors.first_name) { %>
+            <div class="text-danger">
+              <%= errors.first_name.msg %>
+            </div>
+            <% } %>
+        </div>
+
+        <div class="form-register">
+          <label>Apellido</label>
+          <input type="text" name="last_name" id="last_name" value="<%= locals.errors ? oldData.last_name : null %>" />
+          <% if (locals.errors && errors.last_name) { %>
+            <div class="text-danger">
+              <%= errors.last_name.msg %>
+            </div>
+            <% } %>
+        </div>
+
+        <div class="form-register">
+          <label>Email</label>
+          <input type="email" name="email" id="email" value="<%= locals.errors ? oldData.email : null %>" />
+          <% if (locals.errors && errors.email) { %>
+            <div class="text-danger">
+              <%= errors.email.msg %>
+            </div>
+            <% } %>
+        </div>
+
+        <div class="form-register">
+          <label>Contraseña</label>
+          <input type="password" name="password" id="password" />
+          <% if (locals.errors && errors.password) { %>
+            <div class="text-danger">
+              <%= errors.password.msg %>
+            </div>
+            <% } %>
+        </div>
+
+        <div class="form-register">
+          <label for="avatar">Elegí tu foto de perfil</label>
+          <input type="file" name="avatar" id="avatar" />
+          <% if (locals.errors && errors.avatar) { %>
+            <div class="text-danger">
+              <%= errors.avatar.msg %>
+            </div>
+            <% } %>
+        </div>
+
+        <button type="submit">Registrarse</button>
       </div>
-      
-      <div class="form-register">
-        <label>Nombre</label>
-        <input type="text" name="first_name" id="first_name" value="<%= locals.errors ? oldData.first_name : null %>"/>
-        <% if (locals.errors && errors.first_name) { %>
-          <div class="text-danger">
-            <%= errors.first_name.msg %>
-          </div>
-          <% } %>
-      </div>
+    </form>
 
-      <div class="form-register">
-        <label>Apellido</label>
-        <input type="text" name="last_name" id="last_name" value="<%= locals.errors ? oldData.last_name : null %>" />
-        <% if (locals.errors && errors.last_name) { %>
-          <div class="text-danger">
-            <%= errors.last_name.msg %>
-          </div>
-          <% } %>
-      </div>
-
-      <div class="form-register">
-        <label>Email</label>
-        <input type="email" name="email" id="email" value="<%= locals.errors ? oldData.email : null %>" />
-        <% if (locals.errors && errors.email) { %>
-          <div class="text-danger">
-            <%= errors.email.msg %>
-          </div>
-          <% } %>
-      </div>
-
-      <div class="form-register">
-        <label>Contraseña</label>
-        <input type="password" name="password" id="password"/>
-        <% if (locals.errors && errors.password) { %>
-          <div class="text-danger">
-            <%= errors.password.msg %>
-          </div>
-          <% } %>
-      </div>
-
-      
-
-      <div class="form-register">
-        <label for="gender">Género</label>
-        <select name="gender" id="gender">
-          <option value="male" <%=locals.oldData && oldData.gender==="male" ? "selected" : "" %>>Masculino</option>
-          <option value="female" <%=locals.oldData && oldData.gender==="female" ? "selected" : "" %>>Femenino</option>
-        </select>
-
-        <% if (locals.errors && errors.gender) { %>
-          <div class="text-danger">
-            <%= errors.gender.msg %>
-          </div>
-          <% } %>
-      </div>
-
-      <div class="form-register">
-        <label for="avatar">Elegí tu foto de perfil</label>
-        <input type="file" name="avatar" id="avatar"/>
-        <% if (locals.errors && errors.avatar) { %>
-          <div class="text-danger">
-            <%= errors.avatar.msg %>
-          </div>
-          <% } %>
-      </div>
-
-      <button type="submit">Registrarse</button>
-    </div>
-  </form>
-
-  <%- include("../partials/footer") %>
+    <%- include("../partials/footer") %>
 
 </body>
 

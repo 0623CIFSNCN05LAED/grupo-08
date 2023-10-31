@@ -5,7 +5,6 @@
     "last_name": "Howard",
     "email": "howardmoe@gmail.com",
     "birth_date": "1897-06-05",
-    "gender": "male",
     "password": "$2a$10$vi8wxe7IQ6AYbUtkCM1x0OqJsoR87I6socowZkaB8OncKYMox0ElO",
     "avatar": "user-default-image.jpg"
   },
@@ -15,7 +14,6 @@
     "last_name": "Fine",
     "email": "larryfine@gmail.com",
     "birth_date": "1902-10-05",
-    "gender": "female",
     "password": "$2a$10$JRsHMo/Pq9hOun2R2L4H8OQo0EMFeftMDj9IDgNOBDgCDIEG9QU4C",
     "avatar": "user-default-image.jpg"
   },
@@ -25,7 +23,6 @@
     "last_name": "Howard",
     "email": "curlyhoward123@gmail.com",
     "birth_date": "1903-10-22",
-    "gender": "male",
     "password": "$2a$10$fCa0NcqgVRC0nohLuKXQe.Wy4D1HN7PYMBdv3RAhzUOg8hfvS/zC6",
     "avatar": "user-default-image.jpg"
   },
@@ -35,7 +32,6 @@
     "last_name": "perez",
     "email": "juan@gmail.com",
     "birth_date": "2023-10-04",
-    "gender": "male",
     "password": "$2a$10$KKJqaETFlkmyIM3PN6TW3O4VMgXKuzCrc09MJOtTr9PN68VyEvYma",
     "avatar": "avatar-1696333328659.png"
   },
@@ -45,7 +41,6 @@
     "last_name": "Enriquez",
     "email": "victoriaenriquez@gmail.com",
     "birth_date": "",
-    "gender": "male",
     "password": "$2a$10$rM2hmpAZzNo9atOzh5CSGOXFJD6QVSoU5uyXtTD2kZNLwfH6PyQmG",
     "avatar": "avatar-1698155256210.jpg",
     "last_marca": "Enriquez"
@@ -56,7 +51,6 @@
     "last_name": "Mendoza",
     "email": "mateomendoza@gmail.com",
     "birth_date": "2001-03-21",
-    "gender": "male",
     "password": "$2a$10$vImEMWdmYFEpTwb/akU.kOEpbkQTSoZaxTx0/YaMfYKvX8C1A7QcC",
     "avatar": "avatar-1698155436198.jpg"
   },
@@ -66,7 +60,6 @@
     "last_name": "Morales",
     "email": "manuelmorales@gmail.com",
     "birth_date": "1995-10-23",
-    "gender": "male",
     "password": "$2a$10$h8.H.7uO4P.XhbyyiXpZkOxs/sY8M/yNpbSzELBWYXPddaJnKTMZ6",
     "avatar": "avatar-1698155538638.jpg"
   },
@@ -76,7 +69,6 @@
     "last_name": "Carrera",
     "email": "guillerminacarrera@gmail.com",
     "birth_date": "1997-02-14",
-    "gender": "female",
     "password": "$2a$10$AiJJPDDf/B1mxisVDSoUM.mK.G6X4z/wWoGKtSfb/WYZBImyvGPUq",
     "avatar": "avatar-1698155604128.jpg"
   }
