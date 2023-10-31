@@ -22,6 +22,7 @@ const usersController = require("../controllers/users-controller");
 // user register validation
 const validationRegister = require("../validation/validation-register");
 const registerMiddleware = require("../middlewares/register");
+
 // user login validation
 const validation = require("../validation/validation-login");
 const validationErrorsLogin = require("../middlewares/login");

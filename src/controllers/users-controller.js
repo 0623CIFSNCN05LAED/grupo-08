@@ -1,6 +1,5 @@
 const usersServices = require("../services/users-service");
 const bcrypt = require("bcryptjs");
-const { validationResult } = require("express-validator");
 
 const controller = {
   usersList: (req, res) => {
@@ -12,10 +11,6 @@ const controller = {
     const id = req.params.id;
     const users = usersServices.getUser(id);
     res.render("users/userDetailById", { users });
-  },
-
-  profile: (req, res) => {
-    return res.render("users/profile");
   },
 
   // Users Login
@@ -74,6 +69,10 @@ const controller = {
     const id = req.params.id;
     usersServices.updateUser(id, user);
     res.redirect("/users");
+  },
+
+  profile: (req, res) => {
+    return res.render("users/profile");
   },
 
   destroy: (req, res) => {
