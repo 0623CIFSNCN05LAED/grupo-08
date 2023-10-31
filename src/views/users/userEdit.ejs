@@ -10,54 +10,47 @@
 <body>
     <%- include("../partials/header") %>
 
-    <form action="/users/<%= user.id %>?_method=put" method="post">
-        <div class="form-body">
+        <form action="/users/<%= user.id %>?_method=put" method="post">
+            <div class="form-body">
 
-            <div class="text-form">
-            <p class="text">Edición de Usuario/a</p>
-            <p class="text-medium">Por favor modificá los datos:</p>
-            </div>
+                <div class="text-form">
+                    <p class="text">Edición de Usuario/a</p>
+                    <p class="text-medium">Por favor modificá los datos:</p>
+                </div>
 
-            <div class="form-register">
-                <label>Nombre</label>
-                <input type="text" name="first_name" id="first_name" placeholder="Nombre"
-                    value="<%= user.first_name %>" />
-            </div>
-            <div class="form-register">
-                <label>Apellido</label>
-                <input type="text" name="last_name" id="last_name" placeholder="Apellido"
-                    value="<%= user.last_name %>" />
-            </div>
+                <div class="form-register">
+                    <label>Nombre</label>
+                    <input type="text" name="first_name" id="first_name" placeholder="Nombre"
+                        value="<%= user.first_name %>" />
+                </div>
+                <div class="form-register">
+                    <label>Apellido</label>
+                    <input type="text" name="last_name" id="last_name" placeholder="Apellido"
+                        value="<%= user.last_name %>" />
+                </div>
 
-            <div class="form-register">
-                <label>Email</label>
-                <input type="email" name="email" id="email" placeholder="Email" value="<%=user.email%>" />
-            </div>
+                <div class="form-register">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" value="<%=user.email%>" />
+                </div>
 
-            <div class="form-register">
-                <label>Contraseña</label>
-                <input type="password" name="password" id="password" placeholder="Contraseña"
-                    value="<%= user.password %>" />
-            </div>
+                <div class="form-register">
+                    <label>Contraseña</label>
+                    <input type="password" name="password" id="password" placeholder="Contraseña"
+                        value="<%= user.password %>" />
+                </div>
 
-            <div class="form-register">
-                <label for="birth_date">Fecha de Nacimiento</label>
-                <input type="date" name="birth_date" id="birth_date" />
-            </div>
-            
-            <div class="form-register">
-                <label for="gender">Género</label>
-                <select name="gender" id="gender">
-                    <option name="gender" value="male" id="gender">Masculino</option>
-                    <option name="gender" value="female" id="gender">Femenino</option>
-                </select>
-            </div>
+                <div class="form-register">
+                    <label for="birth_date">Fecha de Nacimiento</label>
+                    <input type="date" name="birth_date" id="birth_date" />
+                </div>
 
-            <button type="submit">Editar</button>
-        </div>
-    </form>
 
-    <%- include("../partials/footer") %>
+                <button type="submit">Editar</button>
+            </div>
+        </form>
+
+        <%- include("../partials/footer") %>
 
 </body>
 
