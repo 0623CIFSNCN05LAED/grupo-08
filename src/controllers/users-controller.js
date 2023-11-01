@@ -40,7 +40,7 @@ const controller = {
       return res.render("users/login", {
         errors: {
           email: {
-            msg: "La contraseña es inválida",
+            msg: "La Contraseña es inválida",
           },
         },
         oldData: req.body,
@@ -49,7 +49,7 @@ const controller = {
     return res.render("users/login", {
       errors: {
         email: {
-          msg: "El email no esta regsitrado",
+          msg: "El Email no esta regsitrado",
         },
       },
       oldData: req.body,
