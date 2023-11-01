@@ -37,7 +37,23 @@ const controller = {
 
         res.render("users/profile", { userLogin });
       }
+      return res.render("users/login", {
+        errors: {
+          email: {
+            msg: "La contraseña es inválida",
+          },
+        },
+        oldData: req.body,
+      });
     }
+    return res.render("users/login", {
+      errors: {
+        email: {
+          msg: "El email no esta regsitrado",
+        },
+      },
+      oldData: req.body,
+    });
   },
 
   // Users Register

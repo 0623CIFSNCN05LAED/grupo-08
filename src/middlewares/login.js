@@ -8,7 +8,6 @@ module.exports = (req, res, next) => {
       errors: resultValidation.mapped(),
       oldData: req.body,
     });
-  } else {
-    next();
   }
+  next();
 };
