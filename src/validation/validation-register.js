@@ -6,11 +6,10 @@ module.exports = [
   body("last_name").notEmpty().withMessage("Completa tu Apellido"),
   body("email")
     .notEmpty()
-    .withMessage("Debe completar Email")
+    .withMessage("Completa tu Email")
     .bail()
     .isEmail()
-    .withMessage("Debes escribir un formato de correo valido"),
-  body("gender").notEmpty().withMessage("Completa tu Genero"),
+    .withMessage("Formato de correo invalido"),
   body("birth_date").notEmpty().withMessage("Completa la Fecha"),
   body("password").notEmpty().withMessage("Completa el password"),
   body("avatar").custom((value, { req }) => {
@@ -18,7 +17,7 @@ module.exports = [
     let acceptedExtensions = [".jpg", ".png", ".gif", ".jpeg"];
 
     if (!file) {
-      throw new Error("Tienes que subir una imagen");
+      throw new Error("Subi una imagen");
     } else {
       let fileExtension = path.extname(file.originalname);
       if (!acceptedExtensions.includes(fileExtension)) {

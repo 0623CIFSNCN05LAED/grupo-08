@@ -41,13 +41,24 @@
 
         <div class="form-register">
           <label>Email</label>
-          <input type="email" name="email" id="email" value="<%= locals.errors ? oldData.email : null %>" />
+          <input type="text" name="email" id="email" value="<%= locals.errors ? oldData.email : null %>" />
           <% if (locals.errors && errors.email) { %>
             <div class="text-danger">
               <%= errors.email.msg %>
             </div>
             <% } %>
         </div>
+        
+      <div class="form-register">
+          <label>Fecha Nacimiento</label>
+          <input type="date" name="birth_date" id="birth_date" value="<%= locals.errors ? oldData.birth_date : null %>" />
+          <% if (locals.errors && errors.birth_date) { %>
+            <div class="text-danger">
+              <%= errors.birth_date.msg %>
+            </div>
+            <% } %>
+        </div>
+
 
         <div class="form-register">
           <label>Contraseña</label>
