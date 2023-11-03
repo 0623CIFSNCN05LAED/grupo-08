@@ -68,6 +68,18 @@ const controller = {
   },
 
   processRegister: (req, res) => {
+    const userInDb = usersServices.getfindByEmail("email", req.body.email);
+    if (userInDb) {
+      return res.render("users/register", {
+        errors: {
+          email: {
+            msg: "Este email ya está registrado",
+          },
+        },
+        oldData: req.body,
+      });
+    }
+
     const user = {
       first_name: req.body.first_name,
       last_name: req.body.last_name,
