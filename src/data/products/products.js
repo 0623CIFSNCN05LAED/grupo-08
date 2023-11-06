@@ -42,7 +42,6 @@ module.exports = {
     // busco producto por id
     const productToEdit = products.find((product) => product.id == id);
     // piso las propiedades
-
     //Object.assign(productToEdit, product); //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
 
     productToEdit.name = product.name;
