@@ -26,7 +26,7 @@ const controller = {
   store: (req, res) => {
     const product = {
       name: req.body.name,
-      marca: req.body.marca,
+      brand: req.body.brand,
       price: Number(req.body.price),
       description: req.body.description,
       image: req.file ? req.file.filename : "default-image.jpeg",

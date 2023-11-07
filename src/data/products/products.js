@@ -45,7 +45,7 @@ module.exports = {
     //Object.assign(productToEdit, product); //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
 
     productToEdit.name = product.name;
-    productToEdit.marca = product.marca;
+    productToEdit.brand = product.brand;
     productToEdit.price = product.price;
     productToEdit.description = product.description;
     // guardo los productos

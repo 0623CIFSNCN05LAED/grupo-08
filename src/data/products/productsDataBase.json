@@ -1,16 +1,16 @@
 [
   {
     "id": "a6bc021f-b02f-4986-9444-a4e40561856f",
-    "name": "Fenix 5",
-    "marca": "Garmin",
+    "name": "Fenix 4",
+    "brand": "Garmin",
     "description": "Lo mas de lo mas para correr",
-    "price": 210000,
+    "price": "210000",
     "image": "image-1694803791664.jpg"
   },
   {
     "id": "26771aef-cfec-4aec-b177-96bedc578f10",
     "name": "Suunto 456",
-    "marca": "Suunto",
+    "brand": "Suunto",
     "description": "El mejor reloj para trail de larga duracion ",
     "price": 150000,
     "image": "image-1694804289942.jpg"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "name": "P8",
-    "marca": "COLMI",
+    "brand": "COLMI",
     "price": 10500,
     "description": "Reloj economico ",
     "image": "image-1694804448137.jpg"
@@ -26,7 +26,7 @@
   {
     "id": "c0bb5ff4-1dd0-4424-aa2f-2b376b3b5ec6",
     "name": "T REX",
-    "marca": "IMILAB",
+    "brand": "IMILAB",
     "price": 250,
     "description": "El mejor reloj outdoor",
     "image": "image-1694804801750.jpg"
@@ -34,9 +34,17 @@
   {
     "id": "92f89435-8a31-49a8-ba91-e21fad38bb6f",
     "name": "GARMIN 2",
-    "marca": "GARMIN",
-    "price": 0,
-    "description": "GARMIN1",
+    "brand": "GARMIN",
+    "price": "185000",
+    "description": "Reloj Garmin Alta Gama",
     "image": "default-image.jpeg"
+  },
+  {
+    "id": "b40302ea-a331-4fe0-9822-118ca37559bf",
+    "name": "FENIX 6",
+    "brand": "GARMIN",
+    "price": 2563000,
+    "description": "Reloj Cristal de Zafiro Carga Solar",
+    "image": "image-1699377618847.jpg"
   }
 ]
