@@ -25,10 +25,22 @@
                 <label>Modelo</label>
                 <input type="text" name="name" id="name">
             </div>
-            <div class="form-register">
-                <label>Marca</label>
-                <input type="text" name="brand" id="brand">
-            </div>
+
+            <select name="marca" class="form-register">
+                <% const brands = ["Garmin","Colmi","Suunto","Rolex","Tag Heuer","Omega","Casio","Seiko","Tissot","Imilab"]; %>
+                <option value="">Selecciona una marca</option> <!-- Opción vacía o predeterminada -->
+                <% brands.forEach(brand => { %>
+                  <option value="<%= brand %>"><%= brand %></option>
+                <% }); %>
+              </select>
+
+              <select name="category" class="form-register">
+                <% const categories = ["Clasico", "Deportivo", "Moda Alta Gama", "Deporte Profesional"]; %>
+                <option value="">Selecciona una Categoria</option> <!-- Opción vacía o predeterminada -->
+                <% categories.forEach(category => { %>
+                  <option value="<%= category %>"><%= category %></option>
+                <% }); %>
+              </select>
 
             <div class="form-register">
                 <label>Descripción</label>
