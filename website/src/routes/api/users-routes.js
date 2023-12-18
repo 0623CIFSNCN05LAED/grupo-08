@@ -7,12 +7,12 @@ const apiUsersController = require("../../controllers/api/users-controller");
 
 router.get("/count", apiUsersController.count);
 
-router.get("/:id/", apiUsersController.detailById);
+router.get("/:id", apiUsersController.detailById);
 
-router.post("create/", apiUsersController.create);
+router.post("/", apiUsersController.create);
 
-router.put("edit/:id", apiUsersController.update);
+router.put("/:id", apiUsersController.update);
 
-router.delete("delete/:id", apiUsersController.destroy);
+router.delete("/:id", apiUsersController.destroy);
 
 module.exports = router;

@@ -33,7 +33,7 @@ router.post("/login", validation, validationErrorsLogin, usersController.process
 router.get("/profile", authMiddleware, usersController.profile);
 
 // Logout
-router.get("/logout/", usersController.logout);
+router.get("/logout", usersController.logout);
 
 /*** CREATE USER ***/
 // Register form
@@ -49,7 +49,7 @@ router.post(
 );
 
 // Get users by ID /
-router.get("/:id/", usersController.detailById);
+router.get("/:id", usersController.detailById);
 
 //Edit user
 router.get("/edit/:id", usersController.edit);

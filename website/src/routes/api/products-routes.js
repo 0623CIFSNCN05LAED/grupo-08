@@ -7,12 +7,12 @@ const apiProductsController = require("../../controllers/api/products-controller
 
 router.get("/count", apiProductsController.count);
 
-router.get("/:id/", apiProductsController.detailById);
+router.get("/:id", apiProductsController.detailById);
 
-router.post("create/", apiProductsController.create);
+router.post("/create", apiProductsController.create);
 
-router.put("edit/:id", apiProductsController.update);
+router.put("/edit/:id", apiProductsController.update);
 
-router.delete("delete/:id", apiProductsController.destroy);
+router.delete("/delete/:id", apiProductsController.destroy);
 
 module.exports = router;
