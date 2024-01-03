@@ -6,10 +6,12 @@ import SideMenuRoutes from "./SideMenuRoutes";
 function Dashboard() {
   return (
     <div>
+      <div>
       <Header />
       <SideMenu />
       <SideMenuRoutes />
-
+      </div>
+    
     </div>
   );
 }
